@@ -27,7 +27,7 @@ program:
 		set_color | r=255 ; g=0 ; b=0
 
 	go_home:
-		targeting Home: swim_toward, while far_from_robot, priority of 2 | thresold=1
+		targeting Home: swim_toward, while far_from_robot, priority of 2 | threshold=1
 		targeting Turtle: swim_toward, priority of inv_distance_to_home | k_linear=0 ; score_range=[1,2] 
 		set_color | r=0 ; g=255 ; b=0
 
